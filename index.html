@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+if(window.matchMedia('(max-width:700px)').matches&&new URLSearchParams(location.search).get('desktop')!=='1')location.replace('mobile.html');
+</script>
 <title>Начать сначала на Дизенгоф 336 · Владимир Яновский</title>
 <meta name="description" content="Владимир Яновский. Начать сначала на Дизенгоф 336. Книга с перелистыванием страниц.">
 <style>
@@ -31,6 +34,7 @@
 <button id="next" aria-label="Следующая страница">Вперёд →</button>
 <button id="mode" aria-pressed="true">Разворот</button>
 <button id="zoom" aria-pressed="false">Увеличить</button>
+<a class="control" href="mobile.html">Версия для телефона</a>
 <a class="control" href="book.pdf" target="_blank" rel="noopener">Открыть PDF</a>
 <a class="control" href="book.pdf" download>Скачать PDF</a>
 </nav>
